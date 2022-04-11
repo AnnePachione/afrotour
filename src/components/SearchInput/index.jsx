@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useCities } from '../../hooks/useCities';
+import './styles.scss';
 
 export function SearchInput() {
   const { filterCitiesByName } = useCities();
@@ -11,10 +12,12 @@ export function SearchInput() {
 
   function handleSearch() {
     filterCitiesByName(searchText);
+
+    setSearchText('')
   }
 
   return (
-    <div>
+    <div className='search-input'>
       <input
         type="text"
         placeholder="Pesquise uma cidade"

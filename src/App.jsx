@@ -20,7 +20,7 @@ export function App() {
       <Navbar />
 
       <section className="cities">
-        <div>
+        <div className="search-area">
           <SearchInput />
           <h1>{countries[selectedCountry]}</h1>
         </div>

@@ -2,9 +2,15 @@
   width: 100%;
   margin: 4rem; // 64px
 
+  .search-area {
+    display:flex;
+    margin-bottom: 2rem;
+  }
+
   h1 {
     font-weight: 500;
     text-align: right;
+    margin-left: 2rem;
   }
 }
 
@@ -18,3 +24,5 @@
     grid-template-columns: 1fr;
   }
 }
+
+
